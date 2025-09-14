@@ -1,0 +1,10 @@
+{
+  "id": "copy-note-contents",
+  "name": "Copy Note Contents",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Copy the entire current note with the button in the sidebar",
+  "author": "Seijo Ami",
+  "authorUrl": "一旦パス",
+  "main": "main.js"
+}

@@ -10,6 +10,12 @@ export async function copyCurrentNote(app: App, component: any, settings: CopyNo
     new Notice("No active file to copy.");
     return;
   }
+  
+  // ── 拡張子チェック ──
+  if (activeFile.extension !== "md") {
+    new Notice("Only Markdown files can be copied.");
+    return;
+  }
 
   // ── モード判定 ──
   let mode: "raw" | "reading";
